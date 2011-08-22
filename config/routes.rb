@@ -1,6 +1,11 @@
 SarahDouganWesbsite::Application.routes.draw do
  
   match 'about' => 'home#about'
+  match 'contact' => 'home#contact'
+  match 'portfolio' => 'home#portfolio'
+  match 'blog' => 'home#blog'
+  
+  
   
   root :to => "home#index"
   # The priority is based upon order of creation:
