@@ -65,7 +65,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 3, ../sass/screen.scss */
 body {
-  background-image: url("../images/footer-bg.png");
+  background: #318c9b url("../images/footer-bg.png");
   font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
 }
 
@@ -102,13 +102,13 @@ body {
   text-shadow: #5c7279 0 -1px 0;
   font-size: 14px;
 }
-/* line 41, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 .footer #footer-container #column2 {
   float: left;
   margin-left: 45px;
   width: 270px;
 }
-/* line 45, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 .footer #footer-container #column2 h1 {
   padding-top: 50px;
   font-size: 16px;
@@ -117,7 +117,7 @@ body {
   text-shadow: #8aafbe 0 1px 0;
   font-weight: bold;
 }
-/* line 55, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 .footer #footer-container #column2 p {
   padding-top: 10px;
   line-height: 20px;
@@ -125,35 +125,60 @@ body {
   text-shadow: #5c7279 0 -1px 0;
   font-size: 14px;
 }
-/* line 62, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .footer #footer-container #column2 li {
   list-style: none;
   padding: 5px;
 }
-/* line 67, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 .footer #footer-container #column2 li a {
   text-decoration: none;
   color: #fff;
   text-shadow: #5c7279 0 -1px 0;
   font-size: 14px;
 }
-/* line 73, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .footer #footer-container #column2 li a:hover {
   opacity: 0.5;
 }
-/* line 81, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .footer #footer-container #column2 h1#social {
   padding-top: 52px !important;
   padding-bottom: 10px;
 }
-/* line 88, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .footer #footer-container #column3 {
   float: left;
   margin-left: 45px;
   padding-top: 50px;
   width: 270px;
 }
-/* line 93, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
+.footer #footer-container #column3 .twtr-widget {
+  padding: 0 !important;
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif !important;
+  text-shadow: #5c7279 0 -1px 0;
+  line-height: 20px !important;
+  font-size: 14px;
+}
+/* line 99, ../sass/screen.scss */
+.footer #footer-container #column3 .twtr-widget .twtr-tweet-text p {
+  line-height: 20px !important;
+  font-size: 14px;
+}
+/* line 108, ../sass/screen.scss */
+.footer #footer-container #column3 .twtr-widget .twtr-hd {
+  display: none !important;
+}
+/* line 112, ../sass/screen.scss */
+.footer #footer-container #column3 .twtr-widget .twtr-ft {
+  display: none !important;
+}
+/* line 116, ../sass/screen.scss */
+.footer #footer-container #column3 .twtr-widget .twtr-tweet-wrap {
+  padding-left: 0 !important;
+}
+/* line 122, ../sass/screen.scss */
 .footer #footer-container #column3 h1 {
   font-size: 16px;
   line-height: 21px;
@@ -161,27 +186,29 @@ body {
   text-shadow: #8aafbe 0 1px 0;
   font-weight: bold;
 }
-/* line 101, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .footer #footer-container #column3 p {
   padding-top: 10px;
   line-height: 20px;
+  padding-left: 0 !important;
   color: #fff;
   text-shadow: #5c7279 0 -1px 0;
   font-size: 14px;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .clearfix {
   clear: both;
 }
 
-/* line 118, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 .navigation {
   margin-top: 190px;
   float: left;
   width: 150px;
+  padding-bottom: 20px;
 }
-/* line 123, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .navigation h1 {
   margin-top: 25px;
   font-size: 16px;
@@ -189,11 +216,11 @@ body {
   padding-left: 5px;
   font-family: "Hoefler Text", Baskerville, Garamond, "Palatino Linotype", Georgia, "Times New Roman", serif;
 }
-/* line 131, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .navigation ul {
   border-left: 1px dotted #444444;
 }
-/* line 133, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .navigation ul li {
   padding-bottom: 5px;
   padding-top: 5px;
@@ -203,32 +230,36 @@ body {
   font-family: "Hoefler Text", Baskerville, Garamond, "Palatino Linotype", Georgia, "Times New Roman", serif;
   text-shadow: white 1px 1px 1px;
 }
-/* line 141, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 .navigation ul li a {
   text-decoration: none;
   color: #D33C7D;
   font-family: "Hoefler Text", Baskerville, Garamond, "Palatino Linotype", Georgia, "Times New Roman", serif;
   text-shadow: white 1px 1px 1px;
 }
-/* line 147, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 .navigation ul li a:hover {
   color: #6996AD;
 }
+/* line 185, ../sass/screen.scss */
+.navigation ul li.active a {
+  color: #6996AD;
+}
 
-/* line 155, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 #inner {
   width: 960px;
   margin: 0 auto;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 #main {
   padding-top: 60px;
   width: 800px;
   float: left;
   padding-bottom: 20px;
 }
-/* line 166, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 #main h1 a {
   font-family: "Hoefler Text", Baskerville, Garamond, "Palatino Linotype", Georgia, "Times New Roman", serif;
   font-size: 4.5em;
@@ -237,11 +268,11 @@ body {
   text-decoration: none;
   text-shadow: 0 1px 1px white;
 }
-/* line 174, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 #main h1 a:hover {
   opacity: 0.9;
 }
-/* line 180, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 #main h2 {
   font-family: "Hoefler Text", Baskerville, Garamond, "Palatino Linotype", Georgia, "Times New Roman", serif;
   font-size: 22px;
@@ -249,15 +280,15 @@ body {
   font-style: italic;
   text-shadow: 0 1px 1px white;
 }
-/* line 188, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 #main #myimage {
   margin-top: 20px;
 }
-/* line 190, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 #main #myimage img {
   float: left;
 }
-/* line 193, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 #main #myimage p {
   padding-right: 15px;
   padding-top: 15px;
@@ -268,8 +299,204 @@ body {
   text-shadow: white 0 1px 0;
 }
 
-/* line 206, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
+#project1 {
+  float: left;
+}
+/* line 250, ../sass/screen.scss */
+#project1 a {
+  text-decoration: none;
+}
+/* line 254, ../sass/screen.scss */
+#project1 a h1 {
+  color: #318c9b;
+  font-family: "HelveticaNeue-regular", Helvetica, Arial, sans-serif;
+  text-shadow: white 0 1px 0;
+  font-size: 24px;
+  text-decoration: none;
+}
+/* line 260, ../sass/screen.scss */
+#project1 a h1:hover {
+  color: #D33C7D;
+}
+/* line 264, ../sass/screen.scss */
+#project1 a:hover {
+  color: #D33C7D;
+}
+/* line 269, ../sass/screen.scss */
+#project1 img#banjo {
+  cursor: pointer;
+  width: 200px;
+  height: 135px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #AEAEAE;
+}
+/* line 277, ../sass/screen.scss */
+#project1 img#banjo:hover {
+  opacity: .8;
+}
+
+/* line 283, ../sass/screen.scss */
+#project2 {
+  float: left;
+  margin-left: 40px;
+}
+/* line 286, ../sass/screen.scss */
+#project2 a {
+  text-decoration: none;
+}
+/* line 290, ../sass/screen.scss */
+#project2 a h1 {
+  color: #318c9b;
+  font-family: "HelveticaNeue-regular", Helvetica, Arial, sans-serif;
+  text-shadow: white 0 1px 0;
+  font-size: 24px;
+  text-decoration: none;
+}
+/* line 296, ../sass/screen.scss */
+#project2 a h1:hover {
+  color: #D33C7D;
+}
+/* line 300, ../sass/screen.scss */
+#project2 a:hover {
+  color: #D33C7D;
+}
+/* line 305, ../sass/screen.scss */
+#project2 img#yoofora {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 200px;
+  height: 135px;
+  border: 1px solid #AEAEAE;
+  margin-top: 15px;
+}
+/* line 314, ../sass/screen.scss */
+#project2 img#yoofora:hover {
+  opacity: .8;
+}
+
+/* line 321, ../sass/screen.scss */
+#project3 {
+  float: left;
+  margin-left: 40px;
+}
+/* line 324, ../sass/screen.scss */
+#project3 a {
+  text-decoration: none;
+}
+/* line 328, ../sass/screen.scss */
+#project3 a h1 {
+  color: #318c9b;
+  font-family: "HelveticaNeue-regular", Helvetica, Arial, sans-serif;
+  text-shadow: white 0 1px 0;
+  font-size: 24px;
+  text-decoration: none;
+}
+/* line 334, ../sass/screen.scss */
+#project3 a h1:hover {
+  color: #D33C7D;
+}
+/* line 338, ../sass/screen.scss */
+#project3 a:hover {
+  color: #D33C7D;
+}
+/* line 343, ../sass/screen.scss */
+#project3 img#pbapps {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 200px;
+  height: 135px;
+  border: 1px solid #AEAEAE;
+  margin-top: 15px;
+}
+/* line 351, ../sass/screen.scss */
+#project3 img#pbapps:hover {
+  opacity: .8;
+}
+
+/* line 358, ../sass/screen.scss */
+#project4 {
+  float: left;
+  margin-top: 40px;
+}
+/* line 361, ../sass/screen.scss */
+#project4 a {
+  text-decoration: none;
+}
+/* line 365, ../sass/screen.scss */
+#project4 a h1 {
+  color: #318c9b;
+  font-family: "HelveticaNeue-regular", Helvetica, Arial, sans-serif;
+  text-shadow: white 0 1px 0;
+  font-size: 24px;
+  text-decoration: none;
+}
+/* line 371, ../sass/screen.scss */
+#project4 a h1:hover {
+  color: #D33C7D;
+}
+/* line 375, ../sass/screen.scss */
+#project4 a:hover {
+  color: #D33C7D;
+}
+/* line 380, ../sass/screen.scss */
+#project4 img#soundpostr {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 200px;
+  height: 135px;
+  border: 1px solid #AEAEAE;
+  margin-top: 15px;
+}
+/* line 388, ../sass/screen.scss */
+#project4 img#soundpostr:hover {
+  opacity: .8;
+}
+
+/* line 395, ../sass/screen.scss */
+#project5 {
+  float: left;
+  margin-top: 40px;
+  margin-left: 40px;
+  padding-bottom: 40px;
+}
+/* line 401, ../sass/screen.scss */
+#project5 a {
+  text-decoration: none;
+}
+/* line 405, ../sass/screen.scss */
+#project5 a h1 {
+  color: #318c9b;
+  font-family: "HelveticaNeue-regular", Helvetica, Arial, sans-serif;
+  text-shadow: white 0 1px 0;
+  font-size: 24px;
+  text-decoration: none;
+}
+/* line 411, ../sass/screen.scss */
+#project5 a h1:hover {
+  color: #D33C7D;
+}
+/* line 415, ../sass/screen.scss */
+#project5 a:hover {
+  color: #D33C7D;
+}
+/* line 420, ../sass/screen.scss */
+#project5 img#noca {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 200px;
+  height: 135px;
+  border: 1px solid #AEAEAE;
+  margin-top: 15px;
+}
+/* line 428, ../sass/screen.scss */
+#project5 img#noca:hover {
+  opacity: .8;
+}
+
+/* line 436, ../sass/screen.scss */
 #container {
-  background: url("../images/bg.png");
+  background: #f8f2d9 url("../images/bg.png");
   margin: 0 auto;
 }
