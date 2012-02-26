@@ -18,4 +18,5 @@ class HomeController < ApplicationController
   def portfolio
     @active = "portfolio"
   end
+
 end

@@ -1,13 +1,24 @@
 SarahDouganWesbsite::Application.routes.draw do
  
+  get "contact_form/new"
+
+  get "contact_form/create"
+
   match 'about' => 'home#about'
   match 'contact' => 'home#contact'
   match 'portfolio' => 'home#portfolio'
-  match 'blog' => 'home#blog'
+ 
+
+  match 'blog' => 'posts#index'
+
+  namespace :admin do
+  resources :posts
+  end
+
+   match 'posts/:permalink' => 'posts#show', :as => :post
   
   
-  
-  root :to => "home#index"
+  root :to => "posts#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
