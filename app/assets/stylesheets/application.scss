@@ -146,7 +146,6 @@ body {
 // Blog
 .blog {
     .post {
-        border-bottom: 1px solid #94C8CC;
         margin-bottom: 45px;
 
         header {
@@ -169,12 +168,20 @@ body {
 
         &:last-child {
             margin-bottom: 0;
+
+            .divider {
+                display: none;
+            }
         }
     }
 
     &.show {
         .post {
             border-bottom: 0;
+
+            .divider {
+                display: none;
+            }
         }
     }
 
@@ -184,6 +191,11 @@ body {
 
     .fb-comments {
         margin-top: 10px;
+    }
+
+    .divider {
+        height: 34px;
+        background-image:url(asset-path("divider.png", image));
     }
 }
 
