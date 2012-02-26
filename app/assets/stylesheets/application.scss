@@ -1,0 +1,239 @@
+@import "compass";
+@import "compass/reset";
+
+// Fonts
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:700);
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+@import url(http://fonts.googleapis.com/css?family=Belgrano);
+
+body {
+    font-size:15px;
+    line-height:25px;
+    font-family: 'Arvo', serif;
+    color:#7A7A7A;
+    background-color:#FFFBF7;
+    font-weight:300;
+}
+
+.clearfix {
+//    @include clearfix;
+}
+
+// Wrapper
+.wrapper {
+    background: #FFFBF7;
+    border-left: 1px dotted #E96236;
+    border-right: 1px dotted #E96236;
+    border-bottom: 1px dotted #E96236;
+    margin: 100px auto;
+    width: 850px;
+
+    > section {
+        padding: 45px;
+    }
+}
+
+// Navigation
+.navigation {
+    border-top: 1px dotted #E96236;
+    border-bottom: 1px dotted #E96236;
+    text-align: center;
+
+    > li {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        font-family: Belgrano;
+        color: #42787B;
+        font-size: 16px;
+
+        &:hover {
+            opacity:.8;
+        }
+    }
+
+    &.dev {
+        margin-bottom: 45px;
+
+        a {
+            font-family: 'Josefin Slab', serif;
+            color: #E96236;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .design & .design a,
+        .development & .development a,
+        .dribbble & .dribbble a {
+            color: red;
+        }
+    }
+}
+
+// Portfolio
+.projects > li {
+    border-bottom: 1px solid #42787B;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 300px;
+
+    &:first-child {
+        padding-top:0;
+    }
+
+    &:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    a {
+        color: #E96236;
+        text-decoration: none;
+        font-size: 25px;
+        font-family: 'Josefin Slab', serif;
+        font-weight: 700;
+    }
+
+    h1 {
+        padding-bottom: 10px;
+    }
+
+    img {
+        float: left;
+        width: 390px;
+    }
+
+    p {
+      float: left;
+      width: 350px;
+      padding-left: 20px;
+    }
+}
+
+// Contact
+.contact ul li {
+    padding: 5px 0 5px 30px;
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+
+    &.dribbble {
+        background-image: url(dribbble.png);
+        background-size: 25px;
+    }
+
+    &.twitter {
+        background-image: url(twitter.png);
+        background-size: 25px;
+    }
+
+    &.tumblr {
+        background-image: url(tumblr.png);
+        background-size: 25px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+// Blog
+.blog {
+    .post {
+        border-bottom: 1px solid #94C8CC;
+        margin-bottom: 45px;
+
+        header {
+            h2 a {
+                font-family: 'Josefin Slab', serif;
+                text-decoration: none;
+                font-size: 25px;
+                color: #E96236;
+                font-weight: 700;
+            }
+
+            span {
+                font-size: 11px;
+            }
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &.show {
+        .post {
+            border-bottom: 0;
+        }
+    }
+
+    .twitter-share-button {
+        width: 78px !important;
+    }
+
+    .fb-comments {
+        margin-top: 10px;
+    }
+}
+
+// Dribbble
+.dribbble {
+    .loading,
+    ul.dribbles {
+        text-align: center;
+    }
+
+    ul.dribbbles li {
+        display: inline-block;
+        background: #ddd;
+        padding: 5px;
+        margin: 5px;
+
+        .image {
+            width: 230px;
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        h3 {
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+//.blogposts{
+//  h1{
+//    font-family: 'Josefin Slab', serif;
+//    font-weight:bold;
+//    font-size:25px;
+//    border-bottom:1px dotted #ADB8BA;
+//    padding-bottom:10px;
+//    margin-bottom:10px;
+//  }
+
+//}
+
+html#facebook{
+  margin-top:20px;
+}
+

@@ -1,24 +1,19 @@
-SarahDouganWesbsite::Application.routes.draw do
- 
-  get "contact_form/new"
+SarahdouganMe::Application.routes.draw do
+    match 'about' => 'home#about'
+    match 'contact' => 'home#contact'
+    match 'blog' => 'posts#index'
+    match 'portfolio' => 'home#portfolio_development'
+    match 'portfolio/design' => 'home#portfolio_design'
+    match 'portfolio/dribbble' => 'home#portfolio_dribbble'
 
-  get "contact_form/create"
+    namespace :admin do
+        resources :posts
+    end
 
-  match 'about' => 'home#about'
-  match 'contact' => 'home#contact'
-  match 'portfolio' => 'home#portfolio'
- 
+    match 'posts/:permalink' => 'posts#show', :as => :post
 
-  match 'blog' => 'posts#index'
+    root :to => "posts#index"
 
-  namespace :admin do
-  resources :posts
-  end
-
-   match 'posts/:permalink' => 'posts#show', :as => :post
-  
-  
-  root :to => "posts#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -68,11 +63,11 @@ SarahDouganWesbsite::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => "welcome#index"
+  # root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id(.:format)))'
+  # match ':controller(/:action(/:id))(.:format)'
 end

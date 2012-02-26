@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Sarah Dougan | Web Developer</title>
+    <head>
+        <title>Sarah Dougan | Web Developer</title>
 
-      <%= stylesheet_link_tag :all %>
-      <%= javascript_include_tag "http://code.jquery.com/jquery-1.7.1.min.js", "jquery.instagram.js", "jribbble.js" %>
-      <%= csrf_meta_tag %>
-      
-      <meta name="description" content="Sarah Dougan - Web Developer at Liquor.com">
-      <meta name="keywords" content="Sarah Dougan, Sarah, Dougan, Gannon, Designer, Developer, Web Designer, Web Developer">
-      <meta name="author" content="Sarah Dougan">
-      <meta name="copyright" content="August 2011">
+        <%= stylesheet_link_tag    "application", :media => "all" %>
+        <%= javascript_include_tag "application" %>
+        <%= csrf_meta_tags %>
 
-      <% if @post %>
-      <meta property="og:title" content="<%= @post.name %>">
-      <% else %>
-      <meta property="og:title" content="Blog">
-      <% end %>
-      <meta property="fb:app_id" content="348750841824179">
-      <meta property="og:type" content="blog">
-      <meta property="og:site_name" content="Sarah Dougan">
-      <meta property="og:description" content="Web Developer & Designer">
-      
-      <script type="text/javascript">
+        <meta name="description" content="Sarah Dougan - Web Developer at Liquor.com">
+        <meta name="keywords" content="Sarah Dougan, Sarah, Dougan, Gannon, Designer, Developer, Web Designer, Web Developer">
+        <meta name="author" content="Sarah Dougan">
+        <meta name="copyright" content="August 2011">
 
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-22578706-2']);
-        _gaq.push(['_trackPageview']);
+        <% if @post %>
+        <meta property="og:title" content="<%= @post.name %>">
+        <% else %>
+        <meta property="og:title" content="Blog">
+        <% end %>
+        <meta property="fb:app_id" content="348750841824179">
+        <meta property="og:type" content="blog">
+        <meta property="og:site_name" content="Sarah Dougan">
+        <meta property="og:description" content="Web Developer & Designer">
 
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-22578706-2']);
+            _gaq.push(['_trackPageview']);
 
-      </script>
-</head>
-<body>
-<!-- Facebook -->
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </head>
+    <body>
+        <!-- Facebook -->
         <div id="fb-root"></div>
         <script>
             (function(d, s, id) {
@@ -48,21 +46,13 @@
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
         </script>
-                
 
-    <div id="container">
+        <div class="wrapper">
+            <%= render "shared/navigation" %>
 
-    <%= render "shared/navigation" %>
-        
-
-        <div id="inner">
-        
-        <%= yield %>
-        
+            <%= yield %>
         </div>
 
-        <div id="clearfix"></div>
-    </div>
-    <%= render "shared/footer" %>
-</body>
+        <%= render "shared/footer" %>
+    </body>
 </html>

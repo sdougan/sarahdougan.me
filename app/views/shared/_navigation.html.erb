@@ -1,12 +1,8 @@
-<div class="navigation">
-<div id="center_nav">
-    <ul id="nav">
+<header>
+    <ul class="navigation">
        <li <% if @active == "portfolio" %> class="active"<% end %>><%= link_to "Portfolio", portfolio_path %></li>
         <li <% if @active == "about" %> class="active"<% end %>><%= link_to "About", about_path %></li>
-        
         <li  <% if @active == "blog" %> class="active"<% end %>><%= link_to "Blog",root_url %></li>
         <li<% if @active == "contact" %> class="active"<% end %>><%= link_to "Contact", contact_path %></li>
-        
     </ul>
-</div>
-</div>
+</header>

@@ -1,5 +1,5 @@
 module ApplicationHelper
-	def markdown(text)
+    def markdown(text)
         return if !text
 
         markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :autolink => true, :fenced_code_blocks => true)

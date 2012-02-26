@@ -1,27 +1,27 @@
 class PostsController < ApplicationController
-  def index
-    @posts = Post.all(:conditions => {:published => true}, :order => "created_at DESC")
+    def index
+        @posts = Post.all(:conditions => {:published => true}, :order => "created_at DESC")
 
-    respond_to do |format|
-      format.html
+        respond_to do |format|
+            format.html
+        end
     end
-  end
 
-  def show
-    @post = Post.find_by_permalink(params[:permalink])
+    def show
+        @post = Post.find_by_permalink(params[:permalink])
 
-    respond_to do |format|
-      format.html
+        respond_to do |format|
+            format.html
+        end
     end
-  end
 
-  def feed
-    @posts = Post.all(:conditions => {:published => true}, :order => "created_at DESC", :limit => 20)
+    def feed
+        @posts = Post.all(:conditions => {:published => true}, :order => "created_at DESC", :limit => 20)
 
-    respond_to do |format|
-      format.atom { render :layout => false }
-      format.rss { redirect_to feed_path(:format => :atom), :status => :moved_permanently }
+        respond_to do |format|
+            format.atom { render :layout => false }
+            format.rss { redirect_to feed_path(:format => :atom), :status => :moved_permanently }
+        end
     end
-  end
 end
 

@@ -1,7 +1,9 @@
-<%= link_to "new", new_admin_post_url %>
+<section class="admin posts">
+    <%= link_to "new", new_admin_post_url %>
 
-<ul>
-<% @posts.each do |post| %>
-    <li><%= link_to post.name, edit_admin_post_url(post) %></li>
-<% end %>
-</ul>
+    <ul>
+    <% @posts.each do |post| %>
+        <li><%= link_to post.name, edit_admin_post_url(post) %></li>
+    <% end %>
+    </ul>
+</section>
