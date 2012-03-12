@@ -5,27 +5,45 @@
 @import url(http://fonts.googleapis.com/css?family=Josefin+Slab:700);
 @import url(http://fonts.googleapis.com/css?family=Arvo);
 @import url(http://fonts.googleapis.com/css?family=Belgrano);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn);
+@import url(http://fonts.googleapis.com/css?family=Podkova);
 
 body {
     font-size:15px;
     line-height:25px;
-    font-family: 'Arvo', serif;
-    color:#7A7A7A;
-    background-color:#FFFBF7;
+    font-family: 'arvo',Arial,sans-serif;    
+    color:#32565D;
+    background-color:#FFFFFF;
     font-weight:300;
+    background: url(asset-path("background.png", image)) repeat scroll 0 0 #fff;
 }
 
 .clearfix {
-//    @include clearfix;
+    clear: both;
 }
+
+
+
+.logowrapper{
+    margin: 0 auto;
+    width: 850px;
+    img{
+        width:373px;
+        height:107px;
+        margin: 0 auto;
+        display:block;
+        padding-top:50px;
+    }
+}
+
 
 // Wrapper
 .wrapper {
-    background: #FFFBF7;
-    border-left: 1px dotted #E96236;
+    background: #fff;
+/*    border-left: 1px dotted #E96236;
     border-right: 1px dotted #E96236;
-    border-bottom: 1px dotted #E96236;
-    margin: 100px auto;
+    border-bottom: 1px dotted #E96236;*/
+    margin: 30px auto;
     width: 850px;
 
     > section {
@@ -35,8 +53,8 @@ body {
 
 // Navigation
 .navigation {
-    border-top: 1px dotted #E96236;
-    border-bottom: 1px dotted #E96236;
+    border-top: 1px solid #E3E2DE;
+    border-bottom: 1px solid #E3E2DE;
     text-align: center;
 
     > li {
@@ -47,11 +65,11 @@ body {
     a {
         text-decoration: none;
         font-family: Belgrano;
-        color: #42787B;
+        color: #678287;
         font-size: 16px;
 
         &:hover {
-            opacity:.8;
+            color: #E96236;
         }
     }
 
@@ -60,25 +78,32 @@ body {
 
         a {
             font-family: 'Josefin Slab', serif;
-            color: #E96236;
+            color: #678287;
             font-size: 18px;
             font-weight: bold;
+
+            &:hover {
+            color: #E96236;
+             }
         }
+
+
 
         .design & .design a,
         .development & .development a,
         .dribbble & .dribbble a {
-            color: red;
+            color: #E96236;
         }
     }
 }
 
 // Portfolio
 .projects > li {
-    border-bottom: 1px solid #42787B;
     padding-top: 30px;
     padding-bottom: 30px;
     height: 300px;
+    border-bottom: 1px solid #E3E2DE;
+
 
     &:first-child {
         padding-top:0;
@@ -90,11 +115,11 @@ body {
     }
 
     a {
-        color: #E96236;
+        color: #FF6E5B;
         text-decoration: none;
-        font-size: 25px;
-        font-family: 'Josefin Slab', serif;
-        font-weight: 700;
+        font-size: 24px;
+        font-family: 'Belgrano', serif;
+        font-weight: 400;
     }
 
     h1 {
@@ -104,6 +129,10 @@ body {
     img {
         float: left;
         width: 390px;
+    }
+
+    img:hover {
+        opacity:.8;
     }
 
     p {
@@ -140,6 +169,7 @@ body {
 
     a {
         text-decoration: none;
+        color:#E96236;
     }
 }
 
@@ -147,14 +177,15 @@ body {
 .blog {
     .post {
         margin-bottom: 45px;
+        border-bottom: 1px solid #E3E2DE;
 
         header {
             h2 a {
                 font-family: 'Josefin Slab', serif;
                 text-decoration: none;
-                font-size: 25px;
-                color: #E96236;
-                font-weight: 700;
+                font-size: 24px;
+                color: #FF6E5B;
+                font-weight: 400;
             }
 
             span {
@@ -163,14 +194,20 @@ body {
         }
 
         p {
-            margin-bottom: 10px;
+            margin-bottom: 40px;
+
         }
 
         &:last-child {
             margin-bottom: 0;
+            border-bottom:0;
 
             .divider {
                 display: none;
+            }
+
+            p{
+                margin-bottom: 0;
             }
         }
     }
@@ -193,10 +230,7 @@ body {
         margin-top: 10px;
     }
 
-    .divider {
-        height: 34px;
-        background-image:url(asset-path("divider.png", image));
-    }
+
 }
 
 // Dribbble
@@ -208,8 +242,8 @@ body {
 
     ul.dribbbles li {
         display: inline-block;
-        background: #ddd;
-        padding: 5px;
+        border: 3px solid white;
+box-shadow: 0 1px 5px #8C8C8C;
         margin: 5px;
 
         .image {
@@ -227,25 +261,35 @@ body {
 }
 
 
-
-
-
-
-
-
-//.blogposts{
-//  h1{
-//    font-family: 'Josefin Slab', serif;
-//    font-weight:bold;
-//    font-size:25px;
-//    border-bottom:1px dotted #ADB8BA;
-//    padding-bottom:10px;
-//    margin-bottom:10px;
-//  }
-
-//}
-
 html#facebook{
   margin-top:20px;
 }
 
+.footer{
+    text-align: center;
+    padding:0;
+    font-size:11px;
+    margin-bottom:20px;
+}
+
+section.about {
+    img{
+    width:330px;
+    float:left;
+    }
+
+    p {
+        float:left;
+        width:400px;
+        padding-left:30px;
+    }   
+
+    a{
+        text-decoration: none;
+        color: #32565D;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+}
