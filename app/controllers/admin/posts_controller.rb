@@ -1,6 +1,12 @@
 class Admin::PostsController < ApplicationController
   # before_filter :authenticate_user!
-  before_filter :add_cls
+  before_filter [:add_cls, :authenticate]
+
+  def authenticate
+    authenticate_or_request_with_http_basic "Admin" do |user_name, password|
+      user_name == "sarahdougan@me.com" && password == "pokemon31"
+    end
+  end
 
   def add_cls
     @cls = "admin"
