@@ -1,6 +1,5 @@
 @import "compass";
 @import "compass/reset";
-
 // Fonts
 @import url(http://fonts.googleapis.com/css?family=Josefin+Slab:700);
 @import url(http://fonts.googleapis.com/css?family=Arvo);
@@ -23,8 +22,6 @@ body {
     clear: both;
 }
 
-
-
 .logowrapper{
     margin: 0 auto;
     width: 850px;
@@ -37,19 +34,18 @@ body {
     }
 }
 
-
 // Wrapper
 .wrapper {
     background: #F7F7F7;
     border: 1px solid white;
     margin: 30px auto;
     width: 850px;
-     -webkit-box-shadow: 0px 0px 5px 0px #e4e2e2;
-  -moz-box-shadow: 0px 0px 5px 0px #e4e2e2;
-  box-shadow: 0px 0px 5px 0px #e4e2e2;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 5px 0px #e4e2e2;
+    -moz-box-shadow: 0px 0px 5px 0px #e4e2e2;
+    box-shadow: 0px 0px 5px 0px #e4e2e2;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 
     > section {
         padding: 45px;
@@ -58,7 +54,6 @@ body {
 
 // Navigation
 .navigation {
-    
     text-align: center;
 
     > li {
@@ -73,15 +68,14 @@ body {
         font-size: 16px;
 
         &:hover {
-            opacity:.8;
+            opacity: .8;
         }
     }
 
     &.dev {
         margin-bottom: 45px;
-        border-top:1px solid #dcdcdc;
-        border-bottom:1px solid #dcdcdc;
-
+        border-top: 1px solid #dcdcdc;
+        border-bottom: 1px solid #dcdcdc;
 
         a {
             font-family: Belgrano;
@@ -89,11 +83,9 @@ body {
             font-size: 16px;
 
             &:hover {
-            opacity:.8;
+            opacity: .8;
              }
         }
-
-
 
         .design & .design a,
         .development & .development a,
@@ -110,9 +102,8 @@ body {
     height: 300px;
     border-bottom: 1px solid #E3E2DE;
 
-
     &:first-child {
-        padding-top:0;
+        padding-top: 0;
     }
 
     &:last-child {
@@ -177,7 +168,7 @@ body {
 
     a {
         text-decoration: none;
-        color:#693848;
+        color: #693848;
     }
 }
 
@@ -206,7 +197,7 @@ body {
 
         &:last-child {
             margin-bottom: 0;
-            border-bottom:0;
+            border-bottom: 0;
 
             .divider {
                 display: none;
@@ -264,36 +255,32 @@ body {
                 opacity:.8;
             }
         }
-
-        h3 {
-
-        }
     }
 }
 
 
 html#facebook{
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 .footer{
     text-align: center;
-    padding:0;
-    font-size:11px;
-    margin-bottom:20px;
+    padding: 0;
+    font-size: 11px;
+    margin-bottom: 20px;
 }
 
 section.about {
     img{
-    width:330px;
-    float:left;
-    border-radius:4px;
+    width: 330px;
+    float: left;
+    border-radius: 4px;
     }
 
     p {
-        float:left;
-        width:400px;
-        padding-left:30px;
+        float: left;
+        width: 400px;
+        padding-left: 30px;
     }   
 
     a{
