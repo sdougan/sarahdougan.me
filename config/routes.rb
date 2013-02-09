@@ -12,7 +12,7 @@ SarahdouganMe::Application.routes.draw do
 
     match 'posts/:permalink' => 'posts#show', :as => :post
 
-    root :to => "home#about"
+    root :to => "home#portfolio_dribbble"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

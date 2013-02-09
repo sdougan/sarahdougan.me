@@ -7,10 +7,13 @@
         <%= javascript_include_tag "application" %>
         <%= csrf_meta_tags %>
 
-        <meta name="description" content="Sarah Dougan - Web Developer at Liquor.com">
+        <meta name="description" content="Sarah Dougan - Front-End Developer at Gramble.com">
         <meta name="keywords" content="Sarah Dougan, Sarah, Dougan, Gannon, Designer, Developer, Web Designer, Web Developer">
         <meta name="author" content="Sarah Dougan">
-        <meta name="copyright" content="August 2011">
+        <meta name="copyright" content="August 2013">
+        <meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, width=device-width" />
+        
+
 
         <% if @post %>
         <meta property="og:title" content="<%= @post.name %>">
@@ -49,15 +52,20 @@
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
         </script>
-        <div class="logowrapper">
-         <a href="/"><%= image_tag asset_path 'logo.png' %></a>
-     </div>
-        <div class="wrapper">
-            <%= render "shared/navigation" %>
+         <%= render "shared/navigation" %> 
+         <div class="titles">
+            <h1>Web Developer & Designer living in The Netherlands with my awesome husband, 2 kitties and 2 chihuahuas.</h1>
+            <ul>
+            <li <% if @active == "portfolio" %> class="active"<% end %>><%= link_to "Portfolio", portfolio_path %></li>
+<!--             <li <% if @active == "blog" %> class="active"<% end %>><%= link_to "Blog", blog_path %></li>
+ -->            <li <% if @active == "about" %> class="active"<% end %>><%= link_to "About", about_path %></li>
+            </ul>
+         </div>
+         
 
+        <div class="wrapper">
             <%= yield %>
         </div>
-
         <%= render "shared/footer" %>
     </body>
 </html>
