@@ -124,7 +124,6 @@ DEPENDENCIES
   pg
   pygments.rb
   rails (= 3.2.1)
-  rake (= 0.8.7)
   redcarpet
   sass-rails (~> 3.2.3)
   sqlite3

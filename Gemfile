@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
-gem "rake", "0.8.7"
 
 group :production do
     gem 'pg'
