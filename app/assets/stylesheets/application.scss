@@ -138,6 +138,17 @@ h1 {
   background: #F6F6F6;
   padding: 50px 0;
 
+  form {
+    float: left;
+    width: 400px;
+  }
+
+  .info {
+    width: 600px;
+    float: left;
+    padding-left: 50px;
+  }
+
   label {
     font-family: 'PT Sans', sans-serif;
     font-weight: bold;
