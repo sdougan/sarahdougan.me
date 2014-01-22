@@ -1,10 +1,10 @@
 SarahdouganMe::Application.routes.draw do
     match 'about' => 'home#about'
     match 'contact' => 'home#contact'
+    match 'services' => 'home#services'
+    match 'home' => 'home#home'
     match 'blog' => 'posts#index'
-    match 'portfolio' => 'home#portfolio_development'
-    match 'portfolio/design' => 'home#portfolio_design'
-    match 'portfolio/dribbble' => 'home#portfolio_dribbble'
+    match 'portfolio' => 'home#portfolio'
 
     namespace :admin do
         resources :posts
@@ -12,7 +12,7 @@ SarahdouganMe::Application.routes.draw do
 
     match 'posts/:permalink' => 'posts#show', :as => :post
 
-    root :to => "home#about"
+    root :to => "home#home"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

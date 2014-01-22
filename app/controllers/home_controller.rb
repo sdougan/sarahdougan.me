@@ -7,6 +7,10 @@ class HomeController < ApplicationController
     @active = "blog"
   end
 
+  def home
+    @active = "home"
+  end
+
   def contact
     @active = "contact"
   end
@@ -15,15 +19,14 @@ class HomeController < ApplicationController
     @active = "about"
   end
 
-  def portfolio_design
-    @active = "portfolio_design"
+  def services
+    @active = "services"
   end
 
-  def portfolio_development
-    @active = "portfolio_development"
+
+  def portfolio
+    @active = "portfolio"
   end
 
-  def portfolio_dribbble
-    @active = "portfolio_dribbble"
-  end
+
 end
