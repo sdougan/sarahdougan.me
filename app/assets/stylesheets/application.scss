@@ -140,13 +140,24 @@ h1 {
 
   form {
     float: left;
-    width: 400px;
+    width: 600px;
   }
 
   .info {
-    width: 600px;
+    width: 400px;
     float: left;
     padding-left: 50px;
+    font-family: 'PT Sans', sans-serif;
+
+    p {
+      font-weight: bold;
+    }
+
+    ul {
+      li {
+        padding: 5px 0;
+      }
+    }
   }
 
   label {
@@ -155,7 +166,7 @@ h1 {
   }
 
   input {
-    width: 400px;
+    width: 600px;
     border: 1px solid #CDCDCD;
     border-radius: 3px;
     height: 40px;
@@ -164,11 +175,12 @@ h1 {
   }
 
   textarea {
-    width: 400px;
+    width: 600px;
     border: 1px solid #CDCDCD;
     border-radius: 3px;
     height: 200px;
     padding-left: 10px;
+    max-width: 600px;
   }
 
   button {

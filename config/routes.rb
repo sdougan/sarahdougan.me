@@ -1,10 +1,12 @@
 SarahdouganMe::Application.routes.draw do
     match 'about' => 'home#about'
-    match 'contact' => 'home#contact'
     match 'services' => 'home#services'
     match 'home' => 'home#home'
     match 'blog' => 'posts#index'
     match 'portfolio' => 'home#portfolio'
+
+    match 'contact' => 'home#contact', :as => 'contact', :via => :get
+    match 'contact' => 'home#create', :as => 'contact', :via => :post
 
     namespace :admin do
         resources :posts

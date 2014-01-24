@@ -8,21 +8,27 @@
 
 	<div class="contact_form">
 		<div class="inner">
-			<form>
+			<%= form_for @message, :url => contact_path do |form| %>
 				<label>Your name</label><br>
-				<input type="text" name="name"><br>
+				<%= form.text_field :name %>
 
 				<label>Email</label><br>
-				<input type="email" name="email"><br>
+	      <%= form.text_field :email %><br>
 
 				<label>Some Details</label><br>
-				<textarea></textarea>	<br>
+				<%= form.text_area :body %><br>
 
-				<button>Send</button>
-			</form>
+				<%= form.submit "Send" %>
+			<% end %>
 
 			<div class="info">
 				<p>Some things I need to know:</p>
+				<ul>
+					<li> - Project specs</li>
+					<li> - Timescale (project start/end dates)</li>
+					<li> - Your budget</li>
+					<li> - Current website URL</li>
+				</ul>
 			</div>
 				
 			<div class="clearfix"></div>
