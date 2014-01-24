@@ -133,6 +133,71 @@ h1 {
     }
 }
 
+.portfolio {
+  ul {
+    margin-top: 25px;
+
+    li {
+      background: #FF6081;
+      font-size: 12px;
+      color: #fff;
+      display: inline-block; 
+      padding: 5px 10px;
+      border-radius: 3px;
+      font-weight: bold;
+    }
+  }
+
+  .portfolio_item {
+    background: #F6F6F6;
+    margin-top: 50px;
+    padding: 50px 0 0 0;
+    text-align: center;
+
+    .latest_work {
+      background: #fff;
+
+      .title {
+        padding-top:0;
+        h1 {
+          padding-bottom: 40px;
+        }
+      }
+    }
+
+    .left {
+      width: 700px;
+      float: left;
+
+      .image {
+        height: 950px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .right {  
+      width: 300px;
+      float: left;
+
+      p {
+        text-align: left;
+        font-family: 'PT Sans', sans-serif;
+        padding-left: 50px;
+        color: #FF6081;
+        font-size: 16px;
+        font-weight: bold;
+        padding-bottom: 10px;
+
+        span {
+          color: #555;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
 .contact_form {
   margin-top: 50px;
   background: #F6F6F6;
@@ -183,9 +248,10 @@ h1 {
     max-width: 600px;
   }
 
-  button {
+  input[type="submit"] {
     background: #FF6081;
-    padding: 10px 20px;
+    padding: 10px 0;
+    width: 100px;
     color: #fff;
     border: 0;
     border-radius: 3px;
@@ -224,22 +290,25 @@ h1 {
       li.location {
           background: url(location.png);
           height: 20px;
-          background-size: 15px;
+          background-size: 12px;
           background-repeat: no-repeat;
           padding-left: 18px;
-          line-height: 24px;
+          line-height: 19px;
       }
-
 
       li.email {
         background: url(mail.png);
         height: 20px;
         background-size: 21px;
         background-repeat: no-repeat;
-        padding-left: 28px;
+        padding-left: 30px;
         line-height: 12px;
+
+        a {
+          color: #bebebe;
+          text-decoration: none;
+        }
       }
-    
   }
 
   .footer_bottom {
@@ -254,4 +323,16 @@ h1 {
 
 .clearfix {
   clear: both;
+}
+
+p.flash-error, p.flash-notice {
+  text-align: center;
+  background: #FF6081;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+p.flash-error {
+  background: #ee000c;
 }

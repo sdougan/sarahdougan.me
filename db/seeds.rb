@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Emanuel', :city => cities.first)
+
+Work.create(:title => 'one', :description => 'test', :image => '/portfolio/chihuahua.png', :date => '', :category => 'one,two,three')
+Work.create(:title => 'two', :description => 'test', :image => '', :date => '', :category => 'test')
+Work.create(:title => 'three', :description => 'test', :image => '', :date => '', :category => 'test')
+Work.create(:title => 'four', :description => 'test', :image => '', :date => '', :category => 'test')
+Work.create(:title => 'five', :description => 'test', :image => '', :date => '', :category => 'test')

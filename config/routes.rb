@@ -4,6 +4,7 @@ SarahdouganMe::Application.routes.draw do
     match 'home' => 'home#home'
     match 'blog' => 'posts#index'
     match 'portfolio' => 'home#portfolio'
+    match 'portfolio/:id' => 'home#portfolio_detail'
 
     match 'contact' => 'home#contact', :as => 'contact', :via => :get
     match 'contact' => 'home#create', :as => 'contact', :via => :post

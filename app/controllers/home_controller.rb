@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+  before_filter :get_preview_work
+
   def index
 
   end
@@ -33,6 +35,12 @@ class HomeController < ApplicationController
     @active = "about"
   end
 
+  def portfolio_detail 
+    @active = "portfolio_detail"
+
+    @item = Work.find(params[:id])
+  end
+
   def services
     @active = "services"
   end
@@ -40,7 +48,13 @@ class HomeController < ApplicationController
 
   def portfolio
     @active = "portfolio"
+
+    @items = Work.all(:limit => 8)
   end
 
+  def get_preview_work
+    @preview_items = Work.find(:all, :order => "RANDOM()", :limit => 4)
+
+  end
 
 end

@@ -1,11 +1,11 @@
 class NotificationsMailer < ActionMailer::Base
 
-  default :from => "noreply@youdomain.dev"
-  default :to => "you@youremail.dev"
+  default :from => "noreply@sarahdougan.me"
+  default :to => "sarah@dougan.me"
 
   def new_message(message)
     @message = message
-    mail(:subject => "[YourWebsite.tld] new contact form!")
+    mail(:subject => "Message from contact form")
   end
 
 end

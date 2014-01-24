@@ -1,0 +1,47 @@
+<div class="portfolio">
+	<div class="wrapper">
+		<div class="title">
+			<h1><%= @item.title %></h1>
+		
+			<ul class="items">
+				<% @item.category.split(',').each do |c| %>
+				<li><%= c %></li>
+				<% end %>
+			</ul>
+		</div>
+	</div>
+
+	<div class="portfolio_item">
+		<div class="wrapper">
+			<div class="left">
+				<div class="image" style="background-image:url(<%= @item.image %>);"></div>
+			</div>
+			<div class="right">
+				<p>Date: <span> January 2014</span></p>
+				<p>Client: <span> Sarah Dougan</span></p>
+				<p>Description: <span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+			<div class="latest_work">
+		<div class="wrapper">
+			<div class="title">
+				<h1>Some other projects</h1>
+			</div>
+
+			<%= render :partial => 'preview_work' %>
+
+			<div class="clearfix"></div>
+
+		</div>
+	</div>
+	</div>
+
+
+</div>
