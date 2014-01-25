@@ -97,6 +97,8 @@ h1 {
     float: left;
     margin-right: 10px;
     margin-top: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     &:last-child {
       margin-right: none;
@@ -169,10 +171,10 @@ h1 {
       width: 700px;
       float: left;
 
-      .image {
-        height: 950px;
-        background-size: 100%;
-        background-repeat: no-repeat;
+      img {
+        width: 700px;
+        border: 1px solid #aaa;
+        border-radius: 3px;
       }
     }
 

@@ -11,6 +11,8 @@ class HomeController < ApplicationController
 
   def home
     @active = "home"
+
+    
   end
 
   def create
