@@ -11,7 +11,7 @@
 
 			<div class="box_wrapper">
 				<% @items.each do |item| %>
-				<a class="box" href="portfolio/<%= item.id %>"><%= item.title %></a>
+					<a class="box" href="/portfolio/<%= item.id %>" style="background-image:url(<%= item.image %>);"></a>
 				<% end %>
 			</div>
 			

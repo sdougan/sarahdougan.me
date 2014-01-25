@@ -103,6 +103,10 @@ h1 {
     &:last-child {
       margin-right: none;
     }
+
+    &:hover {
+      opacity: .9;
+    }
   }
 }
 
