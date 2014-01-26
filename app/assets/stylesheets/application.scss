@@ -3,6 +3,7 @@
 // Fonts
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -20,6 +21,14 @@ body {
   width: 1000px;
 }
 
+.logo {
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+  float: left;
+  font-size: 30px;
+  padding-top: 18px;
+}
+
 // Navigation
 .nav_wrap {
   background-color: #262626;
@@ -32,7 +41,7 @@ body {
 
   > li {
       display: inline-block;
-      padding: 15px 20px;
+      padding: 20px 20px;
       font-weight: 400;
       text-transform: uppercase;
       font-family: 'PT Sans', sans-serif;
@@ -96,7 +105,7 @@ h1 {
     width: 240px;
     float: left;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-bottom: 10px;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -132,6 +141,36 @@ h1 {
     .info {
       float: left;
       width: 600px;
+
+      ul {
+        li {
+          display: inline-block;
+          border-radius: 3px;
+          padding: 5px 20px;
+          cursor: pointer;
+
+          &:hover {
+              opacity: .8;
+            }
+
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+
+        li.twitter {
+          background: #00C0F7;
+        }
+
+        li.dribbble {
+          background: #EA4C89;
+        }
+
+        li.behance {
+          background: #0786FF;
+        }
+      }
 
       p {
         padding-bottom: 15px;
