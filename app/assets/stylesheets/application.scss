@@ -22,7 +22,7 @@ body {
 
 .logo {
   font-family: "coquette",fantasy;
-  color: #555;
+  color: #333;
   font-size: 50px;
   padding: 50px 0 0 0;
   text-align: center;
@@ -41,9 +41,8 @@ body {
   > li {
       display: inline-block;
       padding: 50px 20px;
-      font-weight: 400;
-      text-transform: uppercase;
-       font-family: "rooney-web",sans-serif;
+      font-weight: bold;
+      font-family: "rooney-web",sans-serif;
   }
 
   .hireme {
