@@ -22,7 +22,7 @@ body {
 
 .logo {
   font-family: "coquette",fantasy;
-  color: #000;
+  color: #555;
   font-size: 50px;
   padding: 50px 0 0 0;
   text-align: center;
@@ -76,8 +76,8 @@ h3 {
   text-align: center;
   font-family: "adelle",serif;
 
-  border-top:1px solid #aaa;
-  border-bottom: 1px solid #aaa;
+  border-top: 1px solid #DBDBDB;
+  border-bottom: 1px solid #DBDBDB;
 
   .highlight {
     display: inline-block;
@@ -202,9 +202,22 @@ h1 {
 
   .portfolio_item {
     background: #F6F6F6;
-    margin-top: 50px;
     padding: 50px 0 0 0;
     text-align: center;
+
+    .wrapper {
+      padding-bottom: 50px;
+    }
+
+    .title {
+      border:0;
+      text-align: left;
+      padding:0 0 0 50px;
+
+      li {
+        margin-bottom: 15px;
+      }
+    }
 
     .latest_work {
       background: #fff;
@@ -212,6 +225,7 @@ h1 {
       .title {
         padding-top:0;
         text-align: left;
+        border: 0;
 
         h1 {
           padding-bottom: 40px;
