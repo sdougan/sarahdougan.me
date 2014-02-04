@@ -1,14 +1,6 @@
 <div class="portfolio">
 	<div class="wrapper">
-		<div class="title">
-			<h1><%= @item.title %></h1>
 		
-			<ul class="items">
-				<% @item.category.split(',').each do |c| %>
-				<li><%= c %></li>
-				<% end %>
-			</ul>
-		</div>
 	</div>
 
 	<div class="portfolio_item">
@@ -17,6 +9,17 @@
 				<div class="image"> <img src="<%= @item.image %>"></div>
 			</div>
 			<div class="right">
+
+				<div class="title">
+					<h1><%= @item.title %></h1>
+				
+					<ul class="items">
+						<% @item.category.split(',').each do |c| %>
+						<li><%= c %></li>
+						<% end %>
+					</ul>
+				</div>
+				
 				<p>Date: <span> <%= @item.date %></span></p>
 <!-- 				<p>Client: <span> Sarah Dougan</span></p>
  -->				<p>Description: <span> <%= @item.description %></span></p>
